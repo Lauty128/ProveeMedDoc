@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://Lauty128.github.io/ProveeMedDoc/blog</id>
+    <title>ProveeMed Blog</title>
+    <updated>2023-09-28T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://Lauty128.github.io/ProveeMedDoc/blog"/>
+    <subtitle>ProveeMed Blog</subtitle>
+    <icon>https://Lauty128.github.io/ProveeMedDoc/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Presentación del proyecto]]></title>
+        <id>https://Lauty128.github.io/ProveeMedDoc/blog/presentacion-del-proyecto</id>
+        <link href="https://Lauty128.github.io/ProveeMedDoc/blog/presentacion-del-proyecto"/>
+        <updated>2023-09-28T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Este es un articulo cortito brother]]></summary>
+        <content type="html"><![CDATA[<p>Este es un articulo cortito brother</p>]]></content>
+        <author>
+            <name>Lutaro Silverii</name>
+            <uri>https://github.com/Lauty128</uri>
+        </author>
+        <category label="guia" term="guia"/>
+        <category label="presentacion" term="presentacion"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducción]]></title>
+        <id>https://Lauty128.github.io/ProveeMedDoc/blog/introduccion</id>
+        <link href="https://Lauty128.github.io/ProveeMedDoc/blog/introduccion"/>
+        <updated>2023-09-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Este es un articulo cortito brother]]></summary>
+        <content type="html"><![CDATA[<p>Este es un articulo cortito brother</p>]]></content>
+        <author>
+            <name>Lutaro Silverii</name>
+            <uri>https://github.com/Lauty128</uri>
+        </author>
+        <author>
+            <name>Maximo Martinez</name>
+            <uri>https://github.com/MaximoMartinez2001</uri>
+        </author>
+        <category label="guia" term="guia"/>
+    </entry>
+</feed>

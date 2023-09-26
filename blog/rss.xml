@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>ProveeMed Blog</title>
+        <link>https://Lauty128.github.io/ProveeMedDoc/blog</link>
+        <description>ProveeMed Blog</description>
+        <lastBuildDate>Thu, 28 Sep 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>es</language>
+        <item>
+            <title><![CDATA[Presentación del proyecto]]></title>
+            <link>https://Lauty128.github.io/ProveeMedDoc/blog/presentacion-del-proyecto</link>
+            <guid>https://Lauty128.github.io/ProveeMedDoc/blog/presentacion-del-proyecto</guid>
+            <pubDate>Thu, 28 Sep 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Este es un articulo cortito brother]]></description>
+            <content:encoded><![CDATA[<p>Este es un articulo cortito brother</p>]]></content:encoded>
+            <category>guia</category>
+            <category>presentacion</category>
+        </item>
+        <item>
+            <title><![CDATA[Introducción]]></title>
+            <link>https://Lauty128.github.io/ProveeMedDoc/blog/introduccion</link>
+            <guid>https://Lauty128.github.io/ProveeMedDoc/blog/introduccion</guid>
+            <pubDate>Sat, 16 Sep 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Este es un articulo cortito brother]]></description>
+            <content:encoded><![CDATA[<p>Este es un articulo cortito brother</p>]]></content:encoded>
+            <category>guia</category>
+        </item>
+    </channel>
+</rss>

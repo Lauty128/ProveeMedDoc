@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprovee_med_docs=self.webpackChunkprovee_med_docs||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Presentaci\xf3n del proyecto","permalink":"/ProveeMedDoc/blog/presentacion-del-proyecto"},{"title":"Introducci\xf3n","permalink":"/ProveeMedDoc/blog/introduccion"}]}')}}]);
