@@ -5,7 +5,7 @@ description: 'Obtener datos sobre de los proveedores'
 
 ## /providers
 
-- **Endpoint:** `api/proveedores`
+- **Endpoint:** `api/providers`
 - **Método:** GET
 - **Parámetros Opcionales:**
   - `word` (string, opcional): Filtra la lista de proveedores para incluir solo aquellos que contengan la palabra o letras especificadas por el usuario (no distingue entre mayúsculas, minúsculas y acentos).
@@ -84,7 +84,7 @@ La respuesta de este endpoint incluirá una lista de proveedores que cumplan con
 
 ## /providers/[:id]
 
-- **Endpoint:** `api/proveedores/[:id]`
+- **Endpoint:** `api/providers/[:id]`
 - **Método:** GET
 - **Parámetros Opcionales:** No recibe parámetros
 - **Descripción:** Obtiene todos los datos que contiene la base de datos sobre un proveedor. Nombre, sitio web, correo electrónico, números de teléfono, direcciones y un listado con los tipos de equipos(categorías) que comercializa
@@ -121,3 +121,49 @@ GET https://domain/api/providers/2
 La respuesta de este endpoint incluirá todos los datos del proveedor solicitado mediante su id, incluyendo un arreglo con la lista de categorías que comercializa.
 
 Si el proveedor buscado **no existe** se devuelve un `false`
+
+
+## /providers/[:id]/equipments
+
+- **Endpoint:** `api/providers/[id]/equipments`
+- **Método:** GET
+- **Parámetros Opcionales:** No recibe parámetros
+  
+- **Descripción:** Obtiene una lista de equipos médicos vendidos por un proveedor específico, identificado por su ID único. La respuesta incluirá detalles sobre los equipos que este proveedor ofrece.
+
+> Asegúrate de proporcionar el ID único del proveedor en la URL para obtener los equipos correctos de ese proveedor.
+
+### Ejemplo de Uso
+
+```http
+GET https://domain/providers/2/equipments
+```
+
+```json
+{ 
+  "page":1,
+  "limit":20,
+  "total":152,
+  "hasPrevPage":false,
+  "hasNextPage":true,
+  "data":[
+    {
+      "equipmentID": 3,
+      "name": "Equipo 3",
+      "categoryID": 7,
+      "category": "Categoria 7"
+    },
+    {
+      "equipmentID": 16,
+      "name": "Equipo 16",
+      "categoryID": 4,
+      "category": "Categoria 4"
+    },
+    ...
+  ]
+}
+```
+
+### Respuesta
+
+La respuesta de este endpoint contendrá una lista de los equipos médicos vendidos por el proveedor especificado. Cada entrada en la lista proporcionará detalles sobre un equipo en particular. Los detalles pueden incluir información sobre el nombre del equipo, características técnicas y cualquier otra información relevante.
