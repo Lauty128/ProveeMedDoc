@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import PresentationPage from '@site/src/components/PresentationPage'
 
 import styles from './index.module.css';
 
@@ -11,16 +12,21 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Documentación en 5 minutos ⏱️
-          </Link>
+      <div className={`container ${styles.container}`}>
+        <div>
+          <h1 className={styles.hero__title}>
+            {siteConfig.title}
+          </h1>
+          <p className={styles.hero__subtitle}>{siteConfig.tagline}</p>
+          <div className={styles.buttons}>
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/intro">
+              📓 Leer documentación
+            </Link>
+          </div>
         </div>
+        <img src='img/undraw_doctors_p6aq.svg' className={styles.hero__svg} />
       </div>
     </header>
   );
@@ -34,6 +40,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+        <PresentationPage />
         <HomepageFeatures />
       </main>
     </Layout>

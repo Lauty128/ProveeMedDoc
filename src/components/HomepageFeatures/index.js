@@ -4,35 +4,41 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Centralización de Información',
+    Svg: require('@site/static/img/information.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        La plataforma permite centralizar y organizar de manera efectiva la información de todos los proveedores y productos médicos
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Ahorro de Tiempo en Investigación',
+    Svg: require('@site/static/img/time.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Los usuarios ahorran tiempo al no tener que buscar proveedores y productos en diferentes lugares
       </>
     ),
   },
+  // {
+  //   title: 'Datos de Contacto',
+  //   Svg: require('@site/static/img/updated_data.svg').default,
+  //   description: (
+  //     <>
+  //       Los datos de contacto de los proveedores se encuentran disponibles de manera clara y accesible en la plataforma.
+  //     </>
+  //   ),
+  // },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Mejora en la Toma de Decisiones',
+    Svg: require('@site/static/img/decision.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Facilitar la toma de decisiones informadas al tener información detallada sobre productos y proveedores
       </>
     ),
-  },
+  }
 ];
 
 function Feature({Svg, title, description}) {
@@ -53,6 +59,13 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+      <h2 style={{
+        marginBottom:'2em',
+        textAlign:'center',
+        color: 'var(--ifm-color-primary)'
+      }}>
+        ¿Que beneficios proporciona ProveeMed?
+      </h2>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

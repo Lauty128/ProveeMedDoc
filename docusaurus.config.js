@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'ProveeMed',
-  tagline: 'Gestor de proveedores de equipos medicos',
+  tagline: 'La información de proveedores y equipos médicos de la Argentina centralizada en un solo lugar',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

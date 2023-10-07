@@ -1,0 +1,38 @@
+.presentation{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    max-width: 1200px;
+    padding: 2em;
+    margin: 1.5em auto 0 auto;
+}
+
+.presentation__text{
+    width: 60%;
+}
+
+.presentation__svg{
+    width: 300px;
+    height: 200px;
+}
+
+.presentation__p{
+    font-size: 1.1em;
+}
+
+/* @media screen {
+    
+} */
+
+@media screen and (max-width:850px){
+    .presentation{
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .presentation__text{
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+}
