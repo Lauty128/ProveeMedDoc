@@ -3,7 +3,7 @@ sidebar_position: 1
 description: 'Obtener datos sobre los equipos'
 ---
 
-## /equipments
+## **/equipments**
 
 - **Endpoint:** `/equipments`
 - **Método:** GET
@@ -52,16 +52,9 @@ GET https://domain/equipments
 
 ### Respuesta
 
-La respuesta de este endpoint contendrá una lista de todos los equipos médicos disponibles, ordenados en base a la categoría correspondiente. Cada entrada en la lista proporcionará detalles sobre un equipo en particular, incluyendo su nombre, ID único, la categoría a la que pertenece y el ID de esa categoría.
+La respuesta de este endpoint contendrá una lista de todos los equipos médicos disponibles, ordenados alfabeticamente. Cada entrada en la lista proporcionará detalles sobre un equipo en particular, incluyendo su nombre, ID único, el nombre de la categoría a la que pertenece y el ID de esa categoría.
 
-### Notas
-
-- Los equipos se presentan en orden ascendente según la categoría a la que pertenecen.
-- La respuesta incluye información sobre el nombre y el ID del equipo, así como la categoría a la que pertenece y el ID de esa categoría.
-
-## ## /equipments/[id]
-
-### Detalles de la Consulta
+## **/equipments/:id**
 
 - **Endpoint:** `/equipments/[id]`
 - **Método:** GET
@@ -89,6 +82,3 @@ GET https://domain/equipments/34
 
 La respuesta de este endpoint contendrá detalles específicos sobre el equipo médico identificado por el `id`. Estos detalles incluirán el nombre del equipo, su ID, la categoría a la que pertenece y el ID de la categoría correspondiente.
 
-### Notas
-- Asegúrate de proporcionar el ID único del equipo en la URL para obtener detalles específicos sobre ese equipo.
-- Esta consulta proporciona información detallada sobre un equipo médico en particular.

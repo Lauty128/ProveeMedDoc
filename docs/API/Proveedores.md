@@ -3,7 +3,7 @@ sidebar_position: 1
 description: 'Obtener datos sobre de los proveedores'
 ---
 
-## /providers
+## **/providers**
 
 - **Endpoint:** `api/providers`
 - **Método:** GET
@@ -82,7 +82,7 @@ GET https://domain/api/providers?equipments=true
 La respuesta de este endpoint incluirá una lista de proveedores que cumplan con los criterios especificados. Cada entrada en la lista contendrá el nombre del proveedor, correo electrónico y sitio web, en caso de que tenga. Si se ha especificado la opción `equipments=true`, también se incluirá la cantidad de equipos que vende cada proveedor.
 
 
-## /providers/[:id]
+## **/providers/:id**
 
 - **Endpoint:** `api/providers/[:id]`
 - **Método:** GET
@@ -123,7 +123,7 @@ La respuesta de este endpoint incluirá todos los datos del proveedor solicitado
 Si el proveedor buscado **no existe** se devuelve un `false`
 
 
-## /providers/[:id]/equipments
+## **/providers/:id/equipments**
 
 - **Endpoint:** `api/providers/[id]/equipments`
 - **Método:** GET
