@@ -4,28 +4,21 @@
         <title>ProveeMed Blog</title>
         <link>https://Lauty128.github.io/ProveeMedDoc/blog</link>
         <description>ProveeMed Blog</description>
-        <lastBuildDate>Thu, 28 Sep 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 17 Oct 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
         <item>
-            <title><![CDATA[Presentación del proyecto]]></title>
-            <link>https://Lauty128.github.io/ProveeMedDoc/blog/presentacion-del-proyecto</link>
-            <guid>https://Lauty128.github.io/ProveeMedDoc/blog/presentacion-del-proyecto</guid>
-            <pubDate>Thu, 28 Sep 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Este es un articulo cortito brother]]></description>
-            <content:encoded><![CDATA[<p>Este es un articulo cortito brother</p>]]></content:encoded>
-            <category>guia</category>
+            <title><![CDATA[Presentacion de la version 1.0]]></title>
+            <link>https://Lauty128.github.io/ProveeMedDoc/blog/presentacion-v1</link>
+            <guid>https://Lauty128.github.io/ProveeMedDoc/blog/presentacion-v1</guid>
+            <pubDate>Tue, 17 Oct 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[¡Saludos a todos!]]></description>
+            <content:encoded><![CDATA[<p>¡Saludos a todos!</p><p>Estoy emocionado de presentar la primera versión de nuestro proyecto, un esfuerzo continuo que evoluciona bajo el liderazgo y la visión de Pedro Espinoza. Este proyecto, desarrollado por mí, Lautaro Silverii, y mi equipo, es un paso significativo en la gestión de proveedores de equipos médicos en Argentina.</p><p>Esta versión inicial marca el inicio de un viaje emocionante. Estamos comprometidos con la mejora continua y el escalamiento del proyecto. Cada retoque es una oportunidad para perfeccionar la experiencia y ofrecer un servicio excepcional.</p><p>Agradezco a Pedro Espinoza por proponer este proyecto y colaborar con nosotros. Él proporciona la valiosa experiencia médica que impulsa nuestro desarrollo. Seguimos trabajando de la mano de Pedro, quien tiene toda la información esencial para el proyecto.</p><p>Esta primera versión es solo el comienzo. Estamos ansiosos por el camino que se avecina y por las oportunidades de crecimiento que este proyecto nos brindará.</p><p>¡Gracias por ser parte de esta emocionante travesía!</p><p>Atentamente,
+Lautaro Silverii y el Equipo de Desarrollo</p>]]></content:encoded>
             <category>presentacion</category>
-        </item>
-        <item>
-            <title><![CDATA[Introducción]]></title>
-            <link>https://Lauty128.github.io/ProveeMedDoc/blog/introduccion</link>
-            <guid>https://Lauty128.github.io/ProveeMedDoc/blog/introduccion</guid>
-            <pubDate>Sat, 16 Sep 2023 00:00:00 GMT</pubDate>
-            <description><![CDATA[Este es un articulo cortito brother]]></description>
-            <content:encoded><![CDATA[<p>Este es un articulo cortito brother</p>]]></content:encoded>
-            <category>guia</category>
+            <category>version 1</category>
+            <category>api</category>
         </item>
     </channel>
 </rss>

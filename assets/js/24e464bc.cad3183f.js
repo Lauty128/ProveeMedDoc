@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprovee_med_docs=self.webpackChunkprovee_med_docs||[]).push([[274],{6984:e=>{e.exports=JSON.parse('{"permalink":"/ProveeMedDoc/blog/tags/version-1","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkprovee_med_docs=self.webpackChunkprovee_med_docs||[]).push([[245],{6503:e=>{e.exports=JSON.parse('{"label":"api","permalink":"/ProveeMedDoc/blog/tags/api","allTagsPath":"/ProveeMedDoc/blog/tags","count":1}')}}]);
