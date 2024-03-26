@@ -127,8 +127,9 @@ Si el proveedor buscado **no existe** se devuelve un `false`
 
 - **Endpoint:** `api/providers/[id]/equipments`
 - **Método:** GET
-- **Parámetros Opcionales:** No recibe parámetros
-  
+- **Parámetros Opcionales:** 
+    - `page` (number, opcional): Dicta el numero de pagina en el que se encuentra actualmente. (Por defecto es 1).
+    - `limit` (number, opcional): Indica la cantidad de elementos mostrados por pagina. (Por defecto es 40).
 - **Descripción:** Obtiene una lista de equipos médicos vendidos por un proveedor específico, identificado por su ID único. La respuesta incluirá detalles sobre los equipos que este proveedor ofrece.
 
 > Asegúrate de proporcionar el ID único del proveedor en la URL para obtener los equipos correctos de ese proveedor.

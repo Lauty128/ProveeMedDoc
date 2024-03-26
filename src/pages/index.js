@@ -18,12 +18,20 @@ function HomepageHeader() {
             {siteConfig.title}
           </h1>
           <p className={styles.hero__subtitle}>{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
+          <div className={styles.buttons}
+          style={{
+            display:'flex',
+            gap:'1em',
+            flexWrap:'wrap'
+          }}>
             <Link
               className="button button--secondary button--lg"
               to="/docs/intro">
               📓 Leer documentación
             </Link>
+            <a href={'/dashboard'} className="button button--secondary button--lg">
+              💻 Ingresar a dashboard
+            </a>
           </div>
         </div>
         <img src='img/undraw_doctors_p6aq.svg' className={styles.hero__svg} />

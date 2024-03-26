@@ -14,12 +14,12 @@ const config = {
   url: 'https://Lauty128.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/ProveeMedDoc',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Lauty128', // Usually your GitHub org/user name.
-  projectName: 'ProveeMedDoc', // Usually your repo name.
+  projectName: 'ProveeMed | Documentación', // Usually your repo name.
   deploymentBranch:"gh-pages",
   trailingSlash:false,
 

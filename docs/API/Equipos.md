@@ -54,11 +54,22 @@ GET https://domain/equipments
 
 La respuesta de este endpoint contendrá una lista de todos los equipos médicos disponibles, ordenados alfabeticamente. Cada entrada en la lista proporcionará detalles sobre un equipo en particular, incluyendo su nombre, ID único, el nombre de la categoría a la que pertenece y el ID de esa categoría.
 
+
+<!--
+██████╗░██████╗░░█████╗░██╗░░░██╗███████╗███████╗██████╗░░█████╗░██████╗░
+██╔══██╗██╔══██╗██╔══██╗██║░░░██║██╔════╝██╔════╝██╔══██╗██╔══██╗██╔══██╗
+██████╔╝██████╔╝██║░░██║╚██╗░██╔╝█████╗░░█████╗░░██║░░██║██║░░██║██████╔╝
+██╔═══╝░██╔══██╗██║░░██║░╚████╔╝░██╔══╝░░██╔══╝░░██║░░██║██║░░██║██╔══██╗
+██║░░░░░██║░░██║╚█████╔╝░░╚██╔╝░░███████╗███████╗██████╔╝╚█████╔╝██║░░██║
+╚═╝░░░░░╚═╝░░╚═╝░╚════╝░░░░╚═╝░░░╚══════╝╚══════╝╚═════╝░░╚════╝░╚═╝░░╚═╝
+ -->
+
 ## **/equipments/:id**
 
 - **Endpoint:** `/equipments/[id]`
 - **Método:** GET
-- **Parámetros:** No recibe parametros
+- **Parámetros:** 
+  - `id` (number): Identificador del equipo 
 - **Descripción:** Obtiene detalles específicos sobre un equipo médico en particular, identificado por su ID único. La respuesta incluirá información como el nombre del equipo, su ID, la categoría a la que pertenece, el ID de la categoría correspondiente y un codigo UMDNS que lo identifica mundialmente.
 
 ### Ejemplo de Uso
@@ -66,6 +77,7 @@ La respuesta de este endpoint contendrá una lista de todos los equipos médicos
 ```http
 GET https://domain/equipments/34
 ```
+
 ```json
 {
   "equipmentID": 34,
@@ -76,9 +88,87 @@ GET https://domain/equipments/34
 }
 ```
 
-> Suponiendo que el equipo con id 5 es un **Analizador de Catecolaminas**
-
 ### Respuesta
 
 La respuesta de este endpoint contendrá detalles específicos sobre el equipo médico identificado por el `id`. Estos detalles incluirán el nombre del equipo, su ID, la categoría a la que pertenece y el ID de la categoría correspondiente.
 
+<!-- 
+██████╗░██████╗░░█████╗░██╗░░░██╗███████╗███████╗██████╗░░█████╗░██████╗░
+██╔══██╗██╔══██╗██╔══██╗██║░░░██║██╔════╝██╔════╝██╔══██╗██╔══██╗██╔══██╗
+██████╔╝██████╔╝██║░░██║╚██╗░██╔╝█████╗░░█████╗░░██║░░██║██║░░██║██████╔╝
+██╔═══╝░██╔══██╗██║░░██║░╚████╔╝░██╔══╝░░██╔══╝░░██║░░██║██║░░██║██╔══██╗
+██║░░░░░██║░░██║╚█████╔╝░░╚██╔╝░░███████╗███████╗██████╔╝╚█████╔╝██║░░██║
+╚═╝░░░░░╚═╝░░╚═╝░╚════╝░░░░╚═╝░░░╚══════╝╚══════╝╚═════╝░░╚════╝░╚═╝░░╚═╝
+ -->
+
+## **/equipments/:id/providers**
+
+- **Endpoint:** `/equipments/[id]/providers`
+- **Método:** GET
+- **Parámetros:**
+  - `id` (number): Identificador del equipo 
+  - `page` (number, opcional): Dicta el numero de pagina en el que se encuentra actualmente. (Por defecto es 1)
+  - `limit` (number, opcional): Indica la cantidad de elementos mostrados por pagina (Por defecto es 40).
+- **Descripción:** Obtiene los proveedores que vendan el equipo médico en particular, identificado por su ID único.
+
+### Ejemplo de Uso
+
+```http
+GET https://domain/equipments/34/providers
+```
+```json
+{
+  "page":1,
+  "limit":20,
+  "total":152,
+  "hasPrevPage":false,
+  "hasNextPage":true,
+  "data":[
+    {
+      {
+        "providerID":1,
+        "name":"Proveedor 1",
+        "web":"www.proveedor1.com",
+        "mail":"consultas@proveedor1.com",
+        "phone":"2284555555",
+        "address": "Street 555"
+      },
+      {
+        "providerID":2,
+        "name":"Proveedor 2",
+        "web":"www.proveedor2.com",
+        "mail":"consultas@proveedor2.com",
+        "phone":"2284555555",
+        "address": "Street 555"
+    },
+    ...
+    }
+  ]
+}
+```
+
+### Respuesta
+
+La respuesta incluirá una lista de proveedores (Limitada por los parametros), que nos brindara tanto el Nombre, como sus numeros y redes de Contacto.
+
+<!-- 
+██████╗░██████╗░░█████╗░██╗░░░██╗███████╗███████╗██████╗░░█████╗░██████╗░
+██╔══██╗██╔══██╗██╔══██╗██║░░░██║██╔════╝██╔════╝██╔══██╗██╔══██╗██╔══██╗
+██████╔╝██████╔╝██║░░██║╚██╗░██╔╝█████╗░░█████╗░░██║░░██║██║░░██║██████╔╝
+██╔═══╝░██╔══██╗██║░░██║░╚████╔╝░██╔══╝░░██╔══╝░░██║░░██║██║░░██║██╔══██╗
+██║░░░░░██║░░██║╚█████╔╝░░╚██╔╝░░███████╗███████╗██████╔╝╚█████╔╝██║░░██║
+╚═╝░░░░░╚═╝░░╚═╝░╚════╝░░░░╚═╝░░░╚══════╝╚══════╝╚═════╝░░╚════╝░╚═╝░░╚═╝
+ -->
+
+## **/equipments/:id/specifications**
+
+- **Endpoint:** `/equipments/[id]/specifications`
+- **Método:** GET
+- **Parámetros:** 
+  - `id` (number): Identificador del equipo 
+- **Descripción:** Permite descargar los detalles específicos sobre un equipo médico en particular en un archivo no editable, identificado por su ID único. El archivo contendra su respectiva información como el nombre del equipo, su funcion, el manual de uso.
+
+
+### Respuesta
+
+Al realizar una consulta a este endpoint se generara una descarga en el navegador, en formato PDF u otro formato con las especificaciones del equipo seleccionado.
